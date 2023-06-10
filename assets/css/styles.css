@@ -160,6 +160,26 @@
   z-index: -3;
 }
 
+.nav {
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 61px;
+  z-index: 1000;
+}
+
+.nav__list {
+  padding-left: 25px;
+  border-radius: 0 15px 15px 0;
+  background-color: #F2F2F2;
+  padding-top: 27.5px;
+  margin: 0 auto;
+}
+
+.nav__item {
+  margin-bottom: 20.5px;
+}
+
 .purpose {
   position: relative;
   display: flex;
@@ -1282,6 +1302,7 @@ body ol {
 body li {
   margin: 0;
   padding: 0;
+  list-style-type: none;
 }
 
 body a {
@@ -1447,7 +1468,6 @@ button {
 
 .intro {
   width: 696px;
-  margin-top: 176px;
   margin-left: 20px;
   margin-bottom: 126px;
 }
