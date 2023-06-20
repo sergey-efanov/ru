@@ -1,4 +1,3 @@
-<!--include ../blocks/general/counter/counter-->
 <!--include ../blocks/general/limits/limits-->
 <!--include ../blocks/general/trends/trends-->
 <!--include ../blocks/general/value_proposition/value_proposition-->
@@ -118,7 +117,7 @@
           <p class="block__text emotions__text"><span class="--strong">Выбери эмоции из списка, отвечая на вопрос:</span> «Какие эмоции испытывает целевая аудитория при взаимодействии с твоим продуктом или проектом?» Опирайся на пункт №2.</p>
         </div>
         <div class="emotions__block">
-          <div class="emotions__options">
+          <form class="emotions__options">
             <div class="emotions__item">
               <input class="emotions__input" type="checkbox" id="checkbox1" />
               <label class="emotions__name" for="checkbox1">СЧАСТЬЕ</label>
@@ -219,13 +218,36 @@
               <input class="emotions__input" type="checkbox" id="checkbox25" />
               <label class="emotions__name" for="checkbox25">УВАЖЕНИЕ</label>
             </div>
-          </div>
+          </form>
           <input class="emotions__self-value" type="text" placeholder="Свой вариант..." />
           <button class="btn emotions__btn">сохранить</button><img class="emotions__dots_back" src="assets/images/general/dots_back_small.svg" alt="" />
           <textarea class="emotions__notes block__note" name="purpose_note" maxlength="150" placeholder="Ты можешь оставлять заметки на этих полях"></textarea>
           <div class="emotions__hints _stiker"><img src="assets/images/index/scotch.svg" alt="" />
             <p>Можешь добавить свою эмоцию в пустом окне </p>
           </div>
+        </div>
+      </section>
+      <section class="counter" id="7"> <img class="counter__number" src="assets/images/general/7.svg" alt="Номер задания 7" />
+        <h2 class="block__header counter__header">Генерация идей</h2>
+        <p class="block__text counter__text counter__text-first --strong">Ты проанализировал много исходных данных, а сейчас пришло время придумывать новые идеи. Подготовься к работе в несколько этапов.</p>
+        <p class="block__text counter__text --strong"><span class="counter_span-text">1</span> этап</p>
+        <p class="block__text counter__text counter__chang-text --strong">Впиши за 3 минуты форматы и тематики для твоей идеи. Формат — это то, в каком виде она будет реализована. А тематика — любые идеи, которые могут быть воплощены в разных форматах. </p>
+        <div class="counter__entry-fields">
+          <textarea class="counter__textarea textarea-format block__input" placeholder="Формат"></textarea>
+          <textarea class="counter__textarea textarea-themes block__input" placeholder="Тематика"></textarea>
+          <div class="counter__textarea counter__textarea-block textarea-ideas">
+            <textarea class="counter__textarea-idea block__input" placeholder="1 идея"></textarea>
+            <textarea class="counter__textarea-idea block__input" placeholder="2 идея"></textarea>
+            <textarea class="counter__textarea-idea block__input" placeholder="3 идея"></textarea>
+          </div>
+          <div class="counter__textarea counter__textarea-block textarea-comments">
+            <textarea class="counter__textarea-comment block__input" placeholder="Просто начни писать :)"></textarea>
+            <textarea class="counter__textarea-comment block__input"></textarea>
+            <textarea class="counter__textarea-comment block__input"></textarea>
+          </div>
+        </div>
+        <div class="counter__button">
+          <button class="btn counter__btn">далее</button>
         </div>
       </section>
       <div class="button__save">
@@ -235,19 +257,22 @@
   </div>
   <footer class="footer _conteiner">
     <div class="footer__conteiner">
-      <div class="footer__info"><a href="#"> <img src="assets/images/footer/logo_yoootime.png" alt="" /></a><a href="#"> <img src="assets/images/footer/logo_disciplina.png" alt="" /></a><a href="#"> <img src="assets/images/footer/logo_lad.png" alt="" /></a>
+      <div class="footer__info">
+        <div class="footer__brands"><img src="assets/images/footer/logo_yoootime.png" alt="" /><img src="assets/images/footer/logo_disciplina.png" alt="" /><img src="assets/images/footer/logo_lad.png" alt="" /></div>
         <div class="footer__contacts">
           <h3>Контакты</h3>
           <ul class="footer__contacts-list"></ul>
-          <li><a href="#">Компания</a></li>
-          <li><a href="#">Сайт</a></li>
-          <li><a href="#">Соц.сети</a></li>
+          <li><a href="">Компания</a></li>
+          <li><a href="">Сайт</a></li>
+          <li><a href="">Соц.сети</a></li>
+          <li><a href="">Лекция по креативу</a></li>
         </div>
       </div>
       <p>Сайт разработан IT-академией Lad</p>
     </div>
   </footer>
   <script src="assets/js/target_group.min.js"></script>
+  <script src="assets/js/counter_anim.min.js"></script>
   <script src="assets/js/pdfmake.min.js"></script>
   <script src="assets/js/vfs_fonts.min.js"></script>
   <script src="assets/js/main.min.js"></script>
