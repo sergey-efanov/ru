@@ -1,75 +1,71 @@
-<!--include ../blocks/general/limits/limits-->
-<!--include ../blocks/general/trends/trends-->
-<!--include ../blocks/general/value_proposition/value_proposition-->
 <!DOCTYPE html>
 <html lang="ru">
 
 <head>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
   <link rel="stylesheet" href="assets/css/styles.min.css" />
-  <title>Braimstorm booster</title>
+  <title>Brainstorm booster</title>
 </head>
 
-<body>
+<body class="container-bg">
   <header class="header header-conteiner">
     <div class="header__lang"> <a class="header__lang-ru _lang _active-lang" href="#" id="lang">RU</a><a class="header__lang-en _lang" href="#">EN</a></div>
   </header>
   <section class="nav">
     <nav>
       <ul class="nav__list">
-        <li class="nav__item"> <a href="#1"><img src="assets/images/general/1small.svg" alt="Номер задания 1" /></a></li>
-        <li class="nav__item"> <a href="#2"><img src="assets/images/general/2small.svg" alt="Номер задания 2" /></a></li>
-        <li class="nav__item"> <a href="#3"><img src="assets/images/general/3small.svg" alt="Номер задания 3" /></a></li>
-        <li class="nav__item"> <a href="#4"><img src="assets/images/general/4small.svg" alt="Номер задания 4" /></a></li>
-        <li class="nav__item"> <a href="#5"><img src="assets/images/general/5small.svg" alt="Номер задания 5" /></a></li>
-        <li class="nav__item"> <a href="#6"><img src="assets/images/general/6small.svg" alt="Номер задания 6" /></a></li>
-        <li class="nav__item"> <a href="#7"><img src="assets/images/general/7small.svg" alt="Номер задания 7" /></a></li>
-        <li class="nav__item"> <a href="#8"><img src="assets/images/general/8small.svg" alt="Номер задания 8" /></a></li>
+        <li class="nav__item"> <a href="#block1"><img src="assets/images/general/1small.svg" alt="Номер задания 1" /></a></li>
+        <li class="nav__item"> <a href="#block2"><img src="assets/images/general/2small.svg" alt="Номер задания 2" /></a></li>
+        <li class="nav__item"> <a href="#block3"><img src="assets/images/general/3small.svg" alt="Номер задания 3" /></a></li>
+        <li class="nav__item"> <a href="#block4"><img src="assets/images/general/4small.svg" alt="Номер задания 4" /></a></li>
+        <li class="nav__item"> <a href="#block5"><img src="assets/images/general/5small.svg" alt="Номер задания 5" /></a></li>
+        <li class="nav__item"> <a href="#block6"><img src="assets/images/general/6small.svg" alt="Номер задания 6" /></a></li>
+        <li class="nav__item"> <a href="#block7"><img src="assets/images/general/7small.svg" alt="Номер задания 7" /></a></li>
+        <li class="nav__item"> <a href="#block8"><img src="assets/images/general/8small.svg" alt="Номер задания 8" /></a></li>
       </ul>
     </nav>
   </section>
   <div class="container">
     <div class="content-container">
       <section class="intro">
-        <p class="intro__text">Итак, за структуру твоей креативной сессии отвечает <span class="--strong"> Brainstorm booster, </span><br> а ты не стесняйся ставить амбициозные цели, экспериментировать и искать прорывные решения.</p><br>
-        <p class="intro__text --strong">Делай все последовательно, фокусируйся на каждом этапе.<br>Ну что, начнем?</p>
+        <p class="intro__text">Итак, за структуру твоей креативной сессии отвечает <strong> Brainstorm booster, </strong>а ты не стесняйся ставить амбициозные цели, экспериментировать и искать прорывные решения.</p><br>
+        <p class="intro__text"><strong>Делай все последовательно, фокусируйся на каждом этапе.<br>Ну что, начнем? </strong></p>
       </section>
-      <section class="purpose" id="1"> <img class="purpose__number" src="assets/images/general/1.svg" alt="Номер задания 1" />
-        <h2 class="block__header purpose__header">Что ты хочешь получить в результате<br> креативной сессии?</h2>
+      <section class="purpose" id="block1"> <img class="purpose__number" src="assets/images/general/1.svg" alt="Номер задания 1" />
+        <h2 class="block__header purpose__header">Что ты хочешь получить в результате креативной сессии?</h2>
         <div class="purpose__input-field">
           <textarea class="block__input purpose__input" id="purpose_input" name="purpose" maxlength="1000" height="50px" oninput="countChars('purpose_input')" placeholder="Например, я хочу придумать 3 новые рубрики для развития социальных сетей коммуникационного агентства. Наше агентство разрабатывает коммуникационные стратегии создаёт нестандартные решения для развития брендов (ивенты, мерч, спецпроекты)"></textarea>
           <output class="purpose__output" id="purpose_input_out"><span id="count_purpose_input">0</span>/1000</output>
         </div>
-        <button class="btn purpose__btn">сохранить</button><img class="dots_back" src="assets/images/general/dots_back.svg" alt="" />
+        <button class="btn purpose__btn save-btn">сохранить</button><img class="dots_back" src="assets/images/general/dots_back.svg" alt="" />
         <textarea class="purpose__notes block__note" name="purpose_note" maxlength="150" placeholder="Ты можешь оставлять заметки на этих полях"></textarea>
-        <div class="block_hints purpose__hints">
+        <div class="block_hints purpose__hints" onclick="closerHint('purpose')">
           <p>Поразмышляй, что будет результатом сегодняшней работы. Можешь добавить числовые или смысловые показатели.</p>
-        </div><img class="purpose__tape" src="assets/images/general/tape.svg" alt="" />
+        </div><img class="purpose__hints--small" src="assets/images/general/little-yellow-sticker.svg" onclick="sizerHint('purpose')" /><span class="purpose__hints_text--small" onclick="sizerHint('purpose')">Подсказка</span><img class="purpose__tape" src="assets/images/general/tape.svg" alt="" />
       </section>
-      <section class="target-group" id="2"><img class="target-group__number" src="assets/images/general/2.svg" alt="Номер задания 2" />
+      <section class="target-group" id="block2"><img class="target-group__number" src="assets/images/general/2.svg" alt="Номер задания 2" />
         <h2 class="block__header target-group__header">Для кого всё это?</h2>
         <div class="target-group__text-box">
-          <p class="block__text target-group__text --strong">Расскажи о своем потребителе.</p>
-          <p class="block__text target-group__text"><span class="--strong"> Заполни фреймворк ниже, отвечая на вопросы:</span> что он делает,слышит,<br> чувствует и говорит. </p>
+          <p class="block__text target-group__text"><strong>Расскажи о своем потребителе. Заполни фреймворк ниже, отвечая на вопросы:</strong> что он делает, слышит, чувствует и говорит. </p>
         </div>
         <div id="blockTG1">
           <div class="target-group__input-table">
-            <div class="target-group__input-field">
+            <div class="target-group__input-field target-group__input-field--say1" onclick="sizerFields('target-group', '__input-field--say1')">
               <textarea class="block__input target-group__input" id="say1" name="target-group_say" maxlength="1000" oninput="countChars('say1')" placeholder="говорит"></textarea>
               <output class="target-group__output target-group__output--left" id="say1_out"><span id="count_say1">0</span>/1000</output>
             </div>
-            <div class="target-group__input-field">
-              <textarea class="block__input target-group__input" id="think1" name="target-group_think" maxlength="1000" oninput="countChars('think1')" placeholder="думает"></textarea>
+            <div class="target-group__input-field target-group__input-field--think1" onclick="sizerFields('target-group', '__input-field--think1')">
+              <textarea class="block__input target-group__input target-group__input--right" id="think1" name="target-group_think" maxlength="1000" oninput="countChars('think1')" placeholder="думает"></textarea>
               <output class="target-group__output" id="think1_out"><span id="count_think1">0</span>/1000</output>
             </div>
-            <div class="target-group__input-field">
+            <div class="target-group__input-field target-group__input-field--do1" onclick="sizerFields('target-group', '__input-field--do1')">
               <textarea class="block__input target-group__input" id="do1" name="target-group_do" maxlength="1000" oninput="countChars('do1')" placeholder="делает"></textarea>
               <output class="target-group__output target-group__output--left" id="do1_out"><span id="count_do1">0</span>/1000</output>
             </div>
-            <div class="target-group__input-field">
-              <textarea class="block__input target-group__input" id="feel1" name="target-group_feel" maxlength="1000" oninput="countChars('feel1')" placeholder="чувствует"></textarea>
+            <div class="target-group__input-field target-group__input-field--feel1" onclick="sizerFields('target-group', '__input-field--feel1')">
+              <textarea class="block__input target-group__input target-group__input--right" id="feel1" name="target-group_feel" maxlength="1000" oninput="countChars('feel1')" placeholder="чувствует"></textarea>
               <output class="target-group__output" id="feel1_out"><span id="count_feel1">0</span>/1000</output>
             </div>
             <div class="target-group__round" id="round1">
@@ -77,206 +73,314 @@
             </div>
           </div>
         </div>
-        <button class="btn--red target-group__btn--red" id="addTG" type="button">добавить ЦА</button>
-        <button class="btn target-group__btn">сохранить</button>
-        <textarea class="target-group__notes block__note" name="purpose_note" maxlength="150" placeholder="Ты можешь оставлять заметки на этих полях"></textarea>
-        <div class="block_hints target-group__hints">
+        <button class="btn--red btn target-group__btn--red" id="addTG" type="button">добавить ЦА</button>
+        <button class="btn target-group__btn save-btn">сохранить</button>
+        <button class="btn target-group__btn--ready ready-btn"> готово</button>
+        <textarea class="target-group__notes block__note" name="target-group_note" maxlength="150" placeholder="Ты можешь оставлять заметки на этих полях"></textarea>
+        <div class="block_hints target-group__hints" onclick="closerHint('target-group')">
           <p>Не ограничивай себя возрастом, статусом, или полом. Представь, что это фильм  о потребителе, опиши своего героя. Опиши несколько персонажей.</p>
-        </div><img class="target-group__tape" src="assets/images/general/tape.svg" alt="" />
+        </div><img class="target-group__hints--small" src="assets/images/general/little-yellow-sticker.svg" onclick="sizerHint('target-group')" /><span class="target-group__hints_text--small" onclick="sizerHint('target-group')">Подсказка</span><img class="target-group__tape" src="assets/images/general/tape.svg" alt="" />
       </section>
-      <section class="values" id="3"> <img class="values__number" src="assets/images/general/3.svg" alt="Номер задания 3" />
+      <section class="values" id="block3"> <img class="values__number" src="assets/images/general/3.svg" alt="Номер задания 3" />
         <h2 class="block__header values__header">Ценности</h2>
-        <p class="block__text values__text --strong">Выпиши ценности, если они уже есть.</p>
-        <p class="block__text values__text"><span class="--strong"> Или создай их сейчас,</span> для этого  ответь на вопрос:<br> «Что важно в вашем проекте или продукте?»</p>
+        <div class="values__text-box">
+          <p class="block__text values__text"><strong>Выпиши ценности, если они уже есть. Или создай их сейчас,</strong> для этого  ответь на вопрос:<br> «Что важно в вашем проекте или продукте?»</p>
+        </div>
         <div class="values__input-field">
-          <textarea class="block__input values__input" id="values_input" name="values" maxlength="1000" oninput="countChars('values_input')" rows="13" placeholder="Например, вот некоторые ценности нашего коммуникационного
-агентства:
+          <textarea class="block__input values__input" id="values_input" name="values" maxlength="1000" oninput="countChars('values_input')" rows="13" placeholder="Например, вот некоторые ценности нашего коммуникационного агентства:
 
-1.Креативный подход к решению любых задач: Мы
-придерживаемся гибкого подхода к решению возникающих
-вопросов.
+1.Креативный подход к решению любых задач: Мы придерживаемся гибкого подхода к решению возникающих вопросов.
 
-2.Ценность команды: Мы придаем большое значение навыкам
-каждого члена нашей команды. Мы все ощущаем коллективную
-ответственность и стремимся к развитию как команды, так и
-наших клиентов.
+2.Ценность команды: Мы придаем большое значение навыкам каждого члена нашей команды. Мы все ощущаем коллективную ответственность и стремимся к развитию как команды, так и наших клиентов.
 
-3.Открытость: Мы ценим обмен экспертизой и готовы делиться
-знаниями и опытом с другими."></textarea>
+3.Открытость: Мы ценим обмен экспертизой и готовы делиться знаниями и опытом с другими."></textarea>
           <output class="values__output" id="values_input_out"><span id="count_values_input">0</span>/1000</output>
         </div>
-        <button class="btn values__btn">сохранить</button><img class="dots_back" src="assets/images/general/dots_back_small.svg" alt="" />
+        <button class="btn values__btn save-btn">сохранить</button><img class="dots_back" src="assets/images/general/dots_back_small.svg" alt="" />
         <textarea class="values__notes block__note" name="purpose_note" maxlength="150" placeholder="Ты можешь оставлять заметки на этих полях"></textarea>
-        <div class="block_hints values__hints">
-          <p>Если ценностей получится много - пропустите через повторный фильтр, отвечая на вопрос: «действительно ли важна эта ценность для нашего проекта или продукта и почему»</p>
-        </div><img class="values__tape1" src="assets/images/general/tape.svg" alt="" /><img class="values__tape2" src="assets/images/general/tape.svg" alt="" />
+        <div class="block_hints values__hints" onclick="closerHint('values')">
+          <p>Если ценностей получится много - пропустите через повторный фильтр, отвечая на вопрос: «действительно ли важна эта ценность для нашего проекта или продукта и почему»</p><img class="values__tape values__tape__1" src="assets/images/general/tape.svg" alt="" /><img class="values__tape values__tape__2" src="assets/images/general/tape.svg" alt="" />
+        </div><img class="values__hints--small" src="assets/images/general/little-yellow-sticker.svg" onclick="sizerHint('values')" /><span class="values__hints_text--small" onclick="sizerHint('values')">Подсказка</span>
       </section>
-      <section class="emotions" id="4"> <img class="emotions__number" src="assets/images/general/emotions/4.svg" />
+      <section class="emotions" id="block4"> <img class="emotions__number" src="assets/images/general/emotions/4.svg" />
         <h2 class="block__header emotions__header">Эмоции</h2>
         <div class="emotions__text-box">
           <p class="block__text emotions__text"><span class="--strong">Выбери эмоции из списка, отвечая на вопрос:</span> «Какие эмоции испытывает целевая аудитория при взаимодействии с твоим продуктом или проектом?» Опирайся на пункт №2.</p>
         </div>
         <div class="emotions__block">
-          <form class="emotions__options">
+          <div class="emotions__options">
             <div class="emotions__item">
-              <input class="emotions__input" type="checkbox" id="checkbox1" />
-              <label class="emotions__name" for="checkbox1">СЧАСТЬЕ</label>
+              <input class="emotions__input" type="checkbox" id="checkbox1" onclick="return limitChecked()" />
+              <label class="emotions__name" for="checkbox1">счастье</label>
             </div>
             <div class="emotions__item">
-              <input class="emotions__input" type="checkbox" id="checkbox2" />
-              <label class="emotions__name" for="checkbox2">ОЖИДАНИЕ</label>
+              <input class="emotions__input" type="checkbox" id="checkbox2" onclick="return limitChecked()" />
+              <label class="emotions__name" for="checkbox2">ожидание</label>
             </div>
             <div class="emotions__item">
-              <input class="emotions__input" type="checkbox" id="checkbox3" />
-              <label class="emotions__name" for="checkbox3">ТЕПЛОТА</label>
+              <input class="emotions__input" type="checkbox" id="checkbox3" onclick="return limitChecked()" />
+              <label class="emotions__name" for="checkbox3">теплота</label>
             </div>
             <div class="emotions__item">
-              <input class="emotions__input" type="checkbox" id="checkbox4" />
-              <label class="emotions__name" for="checkbox4">ГОРДОСТЬ</label>
+              <input class="emotions__input" type="checkbox" id="checkbox4" onclick="return limitChecked()" />
+              <label class="emotions__name" for="checkbox4">гордость</label>
             </div>
             <div class="emotions__item">
-              <input class="emotions__input" type="checkbox" id="checkbox5" />
-              <label class="emotions__name" for="checkbox5">ДОБРОТА</label>
+              <input class="emotions__input" type="checkbox" id="checkbox5" onclick="return limitChecked()" />
+              <label class="emotions__name" for="checkbox5">доброта</label>
             </div>
             <div class="emotions__item">
-              <input class="emotions__input" type="checkbox" id="checkbox6" />
-              <label class="emotions__name" for="checkbox6">ВОСТОРГ</label>
+              <input class="emotions__input" type="checkbox" id="checkbox6" onclick="return limitChecked()" />
+              <label class="emotions__name" for="checkbox6">восторг</label>
             </div>
             <div class="emotions__item">
-              <input class="emotions__input" type="checkbox" id="checkbox7" />
-              <label class="emotions__name" for="checkbox7">ПРЕДВКУШЕНИЕ</label>
+              <input class="emotions__input" type="checkbox" id="checkbox7" onclick="return limitChecked()" />
+              <label class="emotions__name" for="checkbox7">предвкушение</label>
             </div>
             <div class="emotions__item">
-              <input class="emotions__input" type="checkbox" id="checkbox8" />
-              <label class="emotions__name" for="checkbox8">ДОВЕРИЕ</label>
+              <input class="emotions__input" type="checkbox" id="checkbox8" onclick="return limitChecked()" />
+              <label class="emotions__name" for="checkbox8">доверие</label>
             </div>
             <div class="emotions__item">
-              <input class="emotions__input" type="checkbox" id="checkbox9" />
-              <label class="emotions__name" for="checkbox9">ВОСХИЩЕНИЕ</label>
+              <input class="emotions__input" type="checkbox" id="checkbox9" onclick="return limitChecked()" />
+              <label class="emotions__name" for="checkbox9">восхищение</label>
             </div>
             <div class="emotions__item">
-              <input class="emotions__input" type="checkbox" id="checkbox10" />
-              <label class="emotions__name" for="checkbox10">ПРИЗНАНИЕ</label>
+              <input class="emotions__input" type="checkbox" id="checkbox10" onclick="return limitChecked()" />
+              <label class="emotions__name" for="checkbox10">признание</label>
             </div>
             <div class="emotions__item">
-              <input class="emotions__input" type="checkbox" id="checkbox11" />
-              <label class="emotions__name" for="checkbox11">УВЛЕЧЕНИЕ</label>
+              <input class="emotions__input" type="checkbox" id="checkbox11" onclick="return limitChecked()" />
+              <label class="emotions__name" for="checkbox11">увлечение</label>
             </div>
             <div class="emotions__item">
-              <input class="emotions__input" type="checkbox" id="checkbox12" />
-              <label class="emotions__name" for="checkbox12">НАДЕЖДА</label>
+              <input class="emotions__input" type="checkbox" id="checkbox12" onclick="return limitChecked()" />
+              <label class="emotions__name" for="checkbox12">надежда</label>
             </div>
             <div class="emotions__item">
-              <input class="emotions__input" type="checkbox" id="checkbox13" />
-              <label class="emotions__name" for="checkbox13">БЕЗОПАСНОСТЬ</label>
+              <input class="emotions__input" type="checkbox" id="checkbox13" onclick="return limitChecked()" />
+              <label class="emotions__name" for="checkbox13">безопасность</label>
             </div>
             <div class="emotions__item">
-              <input class="emotions__input" type="checkbox" id="checkbox14" />
-              <label class="emotions__name" for="checkbox14">ЛЮБОВЬ К СЕБЕ</label>
+              <input class="emotions__input" type="checkbox" id="checkbox14" onclick="return limitChecked()" />
+              <label class="emotions__name" for="checkbox14">любовь к себе</label>
             </div>
             <div class="emotions__item">
-              <input class="emotions__input" type="checkbox" id="checkbox15" />
-              <label class="emotions__name" for="checkbox15">ВДОХНОВЛЕНИЕ</label>
+              <input class="emotions__input" type="checkbox" id="checkbox15" onclick="return limitChecked()" />
+              <label class="emotions__name" for="checkbox15">вдохновление</label>
             </div>
             <div class="emotions__item">
-              <input class="emotions__input" type="checkbox" id="checkbox16" />
-              <label class="emotions__name" for="checkbox16">ИНТЕРЕС</label>
+              <input class="emotions__input" type="checkbox" id="checkbox16" onclick="return limitChecked()" />
+              <label class="emotions__name" for="checkbox16">интерес</label>
             </div>
             <div class="emotions__item">
-              <input class="emotions__input" type="checkbox" id="checkbox17" />
-              <label class="emotions__name" for="checkbox17">ЛЮБОПЫТСТВО</label>
+              <input class="emotions__input" type="checkbox" id="checkbox17" onclick="return limitChecked()" />
+              <label class="emotions__name" for="checkbox17">любопытство</label>
             </div>
             <div class="emotions__item">
-              <input class="emotions__input" type="checkbox" id="checkbox18" />
-              <label class="emotions__name" for="checkbox18">БЛАГОДАРНОСТЬ</label>
+              <input class="emotions__input" type="checkbox" id="checkbox18" onclick="return limitChecked()" />
+              <label class="emotions__name" for="checkbox18">благодарность</label>
             </div>
             <div class="emotions__item">
-              <input class="emotions__input" type="checkbox" id="checkbox19" />
-              <label class="emotions__name" for="checkbox19">ИСКРЕННОСТЬ</label>
+              <input class="emotions__input" type="checkbox" id="checkbox19" onclick="return limitChecked()" />
+              <label class="emotions__name" for="checkbox19">искренность</label>
             </div>
             <div class="emotions__item">
-              <input class="emotions__input" type="checkbox" id="checkbox20" />
-              <label class="emotions__name" for="checkbox20">МОТИВАЦИЯ</label>
+              <input class="emotions__input" type="checkbox" id="checkbox20" onclick="return limitChecked()" />
+              <label class="emotions__name" for="checkbox20">мотивация</label>
             </div>
             <div class="emotions__item">
-              <input class="emotions__input" type="checkbox" id="checkbox21" />
-              <label class="emotions__name" for="checkbox21">ЗАБОТА</label>
+              <input class="emotions__input" type="checkbox" id="checkbox21" onclick="return limitChecked()" />
+              <label class="emotions__name" for="checkbox21">забота</label>
             </div>
             <div class="emotions__item">
-              <input class="emotions__input" type="checkbox" id="checkbox22" />
-              <label class="emotions__name" for="checkbox22">ИЗУМЛЕНИЕ</label>
+              <input class="emotions__input" type="checkbox" id="checkbox22" onclick="return limitChecked()" />
+              <label class="emotions__name" for="checkbox22">изумление</label>
             </div>
             <div class="emotions__item">
-              <input class="emotions__input" type="checkbox" id="checkbox23" />
-              <label class="emotions__name" for="checkbox23">СПОКОЙСТВИЕ</label>
+              <input class="emotions__input" type="checkbox" id="checkbox23" onclick="return limitChecked()" />
+              <label class="emotions__name" for="checkbox23">спокойствие</label>
             </div>
             <div class="emotions__item">
-              <input class="emotions__input" type="checkbox" id="checkbox24" />
-              <label class="emotions__name" for="checkbox24">ДРУЖЕЛЮБИЕ</label>
+              <input class="emotions__input" type="checkbox" id="checkbox24" onclick="return limitChecked()" />
+              <label class="emotions__name" for="checkbox24">дружелюбие</label>
             </div>
             <div class="emotions__item">
-              <input class="emotions__input" type="checkbox" id="checkbox25" />
-              <label class="emotions__name" for="checkbox25">УВАЖЕНИЕ</label>
+              <input class="emotions__input" type="checkbox" id="checkbox25" onclick="return limitChecked()" />
+              <label class="emotions__name" for="checkbox25">уважение</label>
             </div>
-          </form>
-          <input class="emotions__self-value" type="text" placeholder="Свой вариант..." />
-          <button class="btn emotions__btn">сохранить</button><img class="emotions__dots_back" src="assets/images/general/dots_back_small.svg" alt="" />
+          </div>
+          <input class="emotions__self-value" type="text" placeholder="Свой вариант..." onclick="return limitChecked()" />
+          <button class="btn emotions__btn save-btn">сохранить</button><img class="emotions__dots_back" src="assets/images/general/dots_back_small.svg" alt="" />
           <textarea class="emotions__notes block__note" name="purpose_note" maxlength="150" placeholder="Ты можешь оставлять заметки на этих полях"></textarea>
-          <div class="emotions__hints _stiker"><img src="assets/images/index/scotch.svg" alt="" />
+          <div class="emotions__hints _stiker" onclick="closerHint('emotions')"><img src="assets/images/index/scotch.svg" alt="" />
             <p>Можешь добавить свою эмоцию в пустом окне </p>
-          </div>
+          </div><span class="emotions__hints_text--small" onclick="sizerHint('emotions')">Подсказка</span><img class="emotions__hints--small" src="assets/images/general/little-green-sticker.svg" onclick="sizerHint('emotions')" />
         </div>
       </section>
-      <section class="counter" id="7"> <img class="counter__number" src="assets/images/general/7.svg" alt="Номер задания 7" />
+      <section class="trends" id="block5"> <img class="trends__number" src="assets/images/general/5.svg" alt="Номер задания 5" />
+        <h2 class="block__header trends__header">Тренды</h2>
+        <div class="trends__text-box">
+          <p class="block__text trends__text"><strong> Выпиши известные и популярные тренды из твоей сферы деятельности. Скоро мы попробуем их применить.</strong></p>
+        </div>
+        <div class="trends__input-field">
+          <textarea class="block__input trends__input" id="trends_input" name="trends" maxlength="1000" height="50px" oninput="countChars('trends_input')" placeholder="Просто начни писать здесь"></textarea>
+          <output class="trends__output" id="trends_input_out"><span id="count_trends_input">0</span>/1000</output>
+        </div>
+        <button class="btn trends__btn save-btn">сохранить</button><img class="trends-group__tape" src="assets/images/general/grid_grin_5.svg" alt="" /><img class="trends-group__tape--small" src="assets/images/general/grid_back.svg" alt="" />
+        <textarea class="trends-group__notes block__note" name="trends_note" maxlength="150" placeholder="Ты можешь оставлять заметки на этих полях"></textarea>
+      </section>
+      <section class="limits" id="block6"> <img class="limits__number" src="assets/images/general/6.svg" alt="Номер задания 6" />
+        <div class="limits__text-box">
+          <h2 class="block__header limits__header">Ограничения</h2>
+          <p class="block__text limits__text"><strong> Какие ресурсные ограничения могут появиться при реализации идеи? </strong></p>
+        </div>
+        <div class="limits__input-field">
+          <textarea class="block__input limits__input" id="limits_input" name="limits" maxlength="1000" oninput="countChars('limits_input')" placeholder="Мы хотим придумать рубрики для агентства. Мы ограничены соцсетями, в которых уже есть аккаунты, разработанной маркетинговой стратегией, выстроенным TOV."></textarea>
+          <output class="limits__output" id="limits_input_out"><span id="count_limits_input">0</span>/1000</output>
+        </div>
+        <button class="btn limits__btn save-btn">сохранить</button><img class="limits__tape" src="assets/images/general/duct_tape.svg" alt="" />
+        <div class="block_hints limits__hints" onclick="closerHint('limits')">
+          <p>Например, ограничение по ресурсам, внешней среде, количеству людей...</p>
+        </div><img class="limits__hints--small" src="assets/images/general/little-yellow-sticker.svg" onclick="sizerHint('limits')" /><span class="limits__hints_text--small" onclick="sizerHint('limits')">Подсказка</span>
+        <textarea class="limits__notes block__note" name="limits_note" maxlength="150" placeholder="Ты можешь оставлять заметки на этих полях"></textarea>
+      </section>
+      <section class="counter" id="block7"> <img class="counter__number" src="assets/images/general/7.svg" alt="Номер задания 7" />
         <h2 class="block__header counter__header">Генерация идей</h2>
-        <p class="block__text counter__text counter__text-first --strong">Ты проанализировал много исходных данных, а сейчас пришло время придумывать новые идеи. Подготовься к работе в несколько этапов.</p>
-        <p class="block__text counter__text --strong"><span class="counter_span-text">1</span> этап</p>
-        <p class="block__text counter__text counter__chang-text --strong">Впиши за 3 минуты форматы и тематики для твоей идеи. Формат — это то, в каком виде она будет реализована. А тематика — любые идеи, которые могут быть воплощены в разных форматах. </p>
-        <div class="counter__entry-fields">
-          <textarea class="counter__textarea textarea-format block__input" placeholder="Формат"></textarea>
-          <textarea class="counter__textarea textarea-themes block__input" placeholder="Тематика"></textarea>
-          <div class="counter__textarea counter__textarea-block textarea-ideas">
-            <textarea class="counter__textarea-idea block__input" placeholder="1 идея"></textarea>
-            <textarea class="counter__textarea-idea block__input" placeholder="2 идея"></textarea>
-            <textarea class="counter__textarea-idea block__input" placeholder="3 идея"></textarea>
+        <p class="block__text counter__text counter__text-first"><strong>Ты проанализировал много исходных данных, а сейчас пришло время придумывать новые идеи. Подготовься к работе в несколько этапов.</strong></p>
+        <p class="block__text counter__text"><strong><span class="counter_span-text">1</span>  этап</strong></p>
+        <p class="block__text counter__text counter__chang-text">
+          Впиши за 3 минуты форматы и тематики для твоей идеи. Формат — это то, в каком виде она будет реализована. А тематика — любые идеи, которые могут быть воплощены в разных форматах.</p><img class="counter__hints--small" src="assets/images/general/little-yellow-sticker.svg" /><span class="counter__hints_text--small">Подсказка</span>
+        <div class="counter__stikers">
+          <div class="counter_hints1 _stiker"><img src="assets/images/index/scotch.svg" alt="" />
+            <p>Например, формат — подкаст, интерактивная доска, аудиосообщения, статьи. Тематика — детские воспоминания, путешествия, еда, созвездия.</p>
           </div>
-          <div class="counter__textarea counter__textarea-block textarea-comments">
-            <textarea class="counter__textarea-comment block__input" placeholder="Просто начни писать :)"></textarea>
-            <textarea class="counter__textarea-comment block__input"></textarea>
-            <textarea class="counter__textarea-comment block__input"></textarea>
+          <div class="counter_hints2 _stiker"><img src="assets/images/index/scotch.svg" alt="" />
+            <p>Например, статьи про еду, интерактивная доска с путешествиями, аудиосообщения про созвездия.</p>
+          </div>
+          <div class="counter_hints3 _stiker"><img src="assets/images/index/scotch.svg" alt="" />
+            <p>Дружелюбный нетворкинг на доске MIRO, где коммуникаторы деляться своими туристическими маршрутами и находят друзей по интересам с помощью нашего агентства.</p>
           </div>
         </div>
-        <div class="counter__button">
-          <button class="btn counter__btn">далее</button>
+        <div class="counter__entry-fields_container">
+          <div class="counter__entry-fields">
+            <div class="textarea-format counter__textarea textarea-format">
+              <textarea class="block__input" id="format" maxlength="1000" oninput="countChars('format')" placeholder="Формат"></textarea>
+              <output class="counter__output" id="format_out"><span id="count_format">0</span>/1000</output>
+            </div>
+            <div class="textarea-themes counter__textarea textarea-themes">
+              <textarea class="block__input" id="theme" maxlength="1000" oninput="countChars('theme')" placeholder="Тематика"></textarea>
+              <output class="counter__output" id="theme_out"><span id="count_theme">0</span>/1000</output>
+            </div>
+            <div class="counter__textarea counter__textarea-block textarea-ideas">
+              <div class="counter__textarea-idea block-idea1">
+                <textarea class="block__input" id="idea1" maxlength="1000" oninput="countChars('idea1')" placeholder="1 идея"></textarea>
+                <output class="counter__output" id="idea1_out"><span id="count_idea1">0</span>/1000</output>
+              </div>
+              <div class="counter__textarea-idea block-idea2">
+                <textarea class="block__input" id="idea2" maxlength="1000" oninput="countChars('idea2')" placeholder="2 идея"></textarea>
+                <output class="counter__output" id="idea2_out"><span id="count_idea2">0</span>/1000</output>
+              </div>
+              <div class="counter__textarea-idea block-idea3">
+                <textarea class="block__input" id="idea3" maxlength="1000" oninput="countChars('idea3')" placeholder="3 идея"></textarea>
+                <output class="counter__output" id="idea3_out"><span id="count_idea3">0</span>/1000</output>
+              </div>
+            </div>
+            <div class="counter__textarea counter__textarea-block textarea-comments">
+              <div class="counter__textarea-comment block-comment1">
+                <textarea class="block__input" id="idea-desc1" maxlength="1000" oninput="countChars('idea-desc1')" placeholder="Просто начни писать :)"></textarea>
+                <output class="counter__output" id="idea-desc1_out"><span id="count_idea-desc1">0</span>/1000</output>
+              </div>
+              <div class="counter__textarea-comment block-comment2">
+                <textarea class="counter__textarea-comment block__input" id="idea-desc2" maxlength="1000" oninput="countChars('idea-desc2')"></textarea>
+                <output class="counter__output" id="idea-desc2_out"><span id="count_idea-desc2">0</span>/1000</output>
+              </div>
+              <div class="counter__textarea-comment block-comment3">
+                <textarea class="counter__textarea-comment block__input" id="idea-desc3" maxlength="1000" oninput="countChars('idea-desc3')"></textarea>
+                <output class="counter__output" id="idea-desc3_out"><span id="count_idea-desc3">0</span>/1000</output>
+              </div>
+            </div>
+          </div>
+        </div>
+        <textarea class="counter__notes block__note" name="purpose_note" maxlength="150" placeholder="Ты можешь оставлять заметки на этих полях"></textarea>
+        <div class="counter__buttons">
+          <button class="btn counter__btn_back">назад</button>
+          <button class="btn counter__btn_next">далее</button>
         </div>
       </section>
-      <div class="button__save">
-        <button class="btn save__btn" type="button" id="btn-save">PDF</button>
-      </div>
+      <section class="value-proposition" id="block8"><img class="value-proposition__number" src="assets/images/general/8.svg" alt="Номер задания 8" />
+        <h2 class="block__header value-proposition__header">Финишная прямая</h2>
+        <div class="value-proposition__text-box">
+          <p class="block__text value-proposition__text"><strong> Ура, мы добрались, давай поразмышляем, как реализованная идея закрывает потребности аудитории, описанные выше. </strong></p>
+          <p class="block__text value-proposition__text"><strong>Задай себе вопросы: </strong>Как реализованная идея встраивается в жизнедеятельность людей? Как снижает тревожность и закрывает боли? Как делает их счастливее?</p>
+        </div><img class="value-proposition__grid-back" src="assets/images/general/grid_back.svg" />
+        <div id="blockVP1">
+          <div class="value-proposition__input-table">
+            <div class="value-proposition__input-field value-proposition__input-field--first value-proposition__input-field--left1" onclick="sizerFields('value-proposition', '__input-field--left1')">
+              <textarea class="block__input value-proposition__input value-proposition__input--left" id="left1" name="value-proposition_left" maxlength="1000" oninput="countChars('left1') " placeholder="Как продукт встраивается в жизнедеятельность людей или проект?"></textarea>
+              <output class="value-proposition__output value-proposition__output--left" id="left1_out"><span id="count_left1">0</span>/1000</output>
+            </div>
+            <div class="value-proposition__input-field value-proposition__input-field--right-up1" onclick="sizerFields('value-proposition', '__input-field--right-up1')">
+              <textarea class="block__input value-proposition__input" id="right-up1" name="value-proposition_right-up" maxlength="1000" oninput="countChars('right-up1')" placeholder="Как делает их счастливее?"></textarea>
+              <output class="value-proposition__output" id="right-up1_out"><span id="count_right-up1">0</span>/1000</output>
+            </div>
+            <div class="value-proposition__input-field value-proposition__input-field--right-down1" onclick="sizerFields('value-proposition', '__input-field--right-down1')">
+              <textarea class="block__input value-proposition__input" id="right-down1" name="value-proposition_right-down" maxlength="1000" oninput="countChars('right-down1')" placeholder="Как снижает тревожность и закрывает боли?"></textarea>
+              <output class="value-proposition__output" id="right-down1_out"><span id="count_right-down1">0</span>/1000</output>
+            </div>
+            <div class="value-proposition__round" id="round1">
+              <p>ЦА</p>
+            </div>
+          </div>
+        </div>
+        <button class="btn--red btn value-proposition__btn--red" id="addVP" type="button">добавить блок</button>
+        <button class="btn value-proposition__btn save-btn">сохранить</button>
+        <button class="btn value-proposition__btn--ready ready-btn"> готово</button>
+        <textarea class="value-proposition__notes block__note" name="value-proposition_note" maxlength="150" placeholder="Ты можешь оставлять заметки на этих полях"></textarea>
+        <div class="block_hints value-proposition__hints" onclick="closerHint('value-proposition')">
+          <p>Пройдите этот путь для каждой аудитории из пункта N2</p>
+        </div><img class="value-proposition__tape" src="assets/images/general/tape.svg" alt="" /><img class="value-proposition__hints--small" src="assets/images/general/little-green-sticker.svg" onclick="sizerHint('value-proposition')" /><span class="value-proposition__hints_text--small" onclick="sizerHint('value-proposition')">Подсказка</span>
+      </section>
+      <section class="conclusion">
+        <h2 class="block__header conclusion__header">Итоги</h2>
+        <div class="conclusion__input-field">
+          <textarea class="block__input conclusion__input" id="conclusion_input" name="conclusion" maxlength="1000" oninput="countChars('conclusion_input')" rows="4" placeholder="Если есть желание зафиксировать что-то еще, можешь написать в этом окне. Если нет, переходи к предпросмотру итогов твоей креативной сессии. Ты можешь вернуться, внести правки и сохранить документ."></textarea>
+          <output class="conclusion__output" id="conclusion_input_out"><span id="count_conclusion_input">0</span>/1000</output>
+        </div>
+        <button class="btn conclusion__btn">сохранить</button>
+      </section>
+      <section class="summary"><img class="summary__paper" src="assets/images/general/Summary_back.svg" alt="" /><img class="summary__paper_mobile" src="assets/images/general/paper_mobile.svg" alt="" />
+        <div class="summary__text-box">
+          <h2 class="block__header summary__header">У тебя остались несохраненные этапы.</h2><img class="summary__marker" src="assets/images/general/marker_summary.svg" alt="" />
+          <p class="block__text summary__text">Если это не было твоей задумкой, можешь вернуться и завершить начатое. </p>
+          <p class="summary__luck">Удачи тебе! =)</p>
+        </div>
+        <div class="button__save">
+          <button class="btn summary__btn return__btn" type="button" id="btn-returnToEmpty">ОК</button>
+          <button class="btn summary__btn save__btn" type="button" id="btn-save">перейти к документу</button>
+        </div>
+        <div class="block_hints summary__hints">
+          <p>Тебе необходимо вернуться и завершить начатое</p>
+        </div><img class="summary__tape" src="assets/images/general/tape.svg" alt="" />
+      </section>
     </div>
   </div>
-  <footer class="footer _conteiner">
-    <div class="footer__conteiner">
-      <div class="footer__info">
-        <div class="footer__brands"><img src="assets/images/footer/logo_yoootime.png" alt="" /><img src="assets/images/footer/logo_disciplina.png" alt="" /><img src="assets/images/footer/logo_lad.png" alt="" /></div>
-        <div class="footer__contacts">
-          <h3>Контакты</h3>
-          <ul class="footer__contacts-list"></ul>
-          <li><a href="">Компания</a></li>
-          <li><a href="">Сайт</a></li>
-          <li><a href="">Соц.сети</a></li>
-          <li><a href="">Лекция по креативу</a></li>
-        </div>
-      </div>
-      <p>Сайт разработан IT-академией Lad</p>
+  <footer class="footer">
+    <div class="footer__container">
+      <div class="footer__info"><a href="https://yoootime.com/" target="_blank"> <img src="assets/images/footer/logo_yoootime.svg" alt="" /></a><a href="https://disciplina-courses.ru/" target="_blank"> <img src="assets/images/footer/logo_disciplina.svg" alt="" /></a><a href="https://lad-academy.ru/" target="_blank"> <img src="assets/images/footer/logo_lad.svg" alt="" /></a></div>
+      <p>Проект разработан &nbsp; <a href="https://yoootime.com/" target="_blank">yoootime</a></p>
+      <p>Сайт разработан &nbsp; <a href="https://lad-academy.ru/" target="_blank">IT-академией Lad</a></p>
     </div>
   </footer>
   <script src="assets/js/target_group.min.js"></script>
-  <script src="assets/js/counter_anim.min.js"></script>
   <script src="assets/js/pdfmake.min.js"></script>
   <script src="assets/js/vfs_fonts.min.js"></script>
   <script src="assets/js/main.min.js"></script>
   <script src="assets/js/gen_pdf.min.js"></script>
+  <script src="assets/js/counter_anim.min.js"></script>
+  <script src="assets/js/value_proposition.min.js"></script>
+  <script src="assets/js/nav.min.js"></script>
+  <script src="assets/js/emotions_input.min.js"></script>
 </body>
 
 </html>
