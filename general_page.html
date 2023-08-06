@@ -75,7 +75,7 @@
         </div>
         <button class="btn--red btn target-group__btn--red" id="addTG" type="button">добавить ЦА</button>
         <button class="btn target-group__btn save-btn">сохранить</button>
-        <button class="btn target-group__btn--ready ready-btn"> готово</button>
+        <button class="btn target-group__btn--ready ready-btn"> готово</button><img class="target-group__notes-back" src="assets/images/general/grid_back.svg" /><img class="target-group__notes-back--small" src="assets/images/general/grid_grin_5.svg" />
         <textarea class="target-group__notes block__note" name="target-group_note" maxlength="150" placeholder="Ты можешь оставлять заметки на этих полях"></textarea>
         <div class="block_hints target-group__hints" onclick="closerHint('target-group')">
           <p>Не ограничивай себя возрастом, статусом, или полом. Представь, что это фильм  о потребителе, опиши своего героя. Опиши несколько персонажей.</p>
@@ -102,13 +102,22 @@
           <p>Если ценностей получится много - пропустите через повторный фильтр, отвечая на вопрос: «действительно ли важна эта ценность для нашего проекта или продукта и почему»</p><img class="values__tape values__tape__1" src="assets/images/general/tape.svg" alt="" /><img class="values__tape values__tape__2" src="assets/images/general/tape.svg" alt="" />
         </div><img class="values__hints--small" src="assets/images/general/little-yellow-sticker.svg" onclick="sizerHint('values')" /><span class="values__hints_text--small" onclick="sizerHint('values')">Подсказка</span>
       </section>
-      <section class="emotions" id="block4"> <img class="emotions__number" src="assets/images/general/emotions/4.svg" />
-        <h2 class="block__header emotions__header">Эмоции</h2>
-        <div class="emotions__text-box">
-          <p class="block__text emotions__text"><span class="--strong">Выбери эмоции из списка, отвечая на вопрос:</span> «Какие эмоции испытывает целевая аудитория при взаимодействии с твоим продуктом или проектом?» Опирайся на пункт №2.</p>
+    </div>
+  </div>
+  <div class="container-emotions">
+    <section class="emotions" id="block4">
+      <div class="emotions__content-header">
+        <div class="emotions__content-img"><img class="emotions__number" src="assets/images/general/emotions/4.svg" /></div>
+        <div class="emotions__content-title">
+          <h2 class="block__header emotions__header">Эмоции</h2>
+          <div class="emotions__text-box">
+            <p class="block__text emotions__text"><strong>Выбери эмоции из списка, отвечая на вопрос:</strong> «Какие эмоции испытывает целевая аудитория при взаимодействии с твоим продуктом или проектом?» Опирайся на пункт №2.</p>
+          </div>
         </div>
-        <div class="emotions__block">
-          <div class="emotions__options">
+      </div>
+      <div class="emotions__block">
+        <div class="emotions__options">
+          <div class="emotions__items">
             <div class="emotions__item">
               <input class="emotions__input" type="checkbox" id="checkbox1" onclick="return limitChecked()" />
               <label class="emotions__name" for="checkbox1">счастье</label>
@@ -211,13 +220,17 @@
             </div>
           </div>
           <input class="emotions__self-value" type="text" placeholder="Свой вариант..." onclick="return limitChecked()" />
-          <button class="btn emotions__btn save-btn">сохранить</button><img class="emotions__dots_back" src="assets/images/general/dots_back_small.svg" alt="" />
-          <textarea class="emotions__notes block__note" name="purpose_note" maxlength="150" placeholder="Ты можешь оставлять заметки на этих полях"></textarea>
-          <div class="emotions__hints _stiker" onclick="closerHint('emotions')"><img src="assets/images/index/scotch.svg" alt="" />
-            <p>Можешь добавить свою эмоцию в пустом окне </p>
-          </div><span class="emotions__hints_text--small" onclick="sizerHint('emotions')">Подсказка</span><img class="emotions__hints--small" src="assets/images/general/little-green-sticker.svg" onclick="sizerHint('emotions')" />
         </div>
-      </section>
+        <button class="btn emotions__btn save-btn">сохранить</button><img class="emotions__dots_back" src="assets/images/general/dots_back_small.svg" alt="" />
+        <textarea class="emotions__notes block__note" name="purpose_note" maxlength="150" placeholder="Ты можешь оставлять заметки на этих полях"></textarea>
+        <div class="emotions__hints _stiker" onclick="closerHint('emotions')"><img src="assets/images/index/scotch.svg" alt="" />
+          <p>Можешь добавить свою эмоцию в пустом окне </p>
+        </div><span class="emotions__hints_text--small" onclick="sizerHint('emotions')">Подсказка</span><img class="emotions__hints--small" src="assets/images/general/little-green-sticker.svg" onclick="sizerHint('emotions')" />
+      </div>
+    </section>
+  </div>
+  <div class="container">
+    <div class="content-container">
       <section class="trends" id="block5"> <img class="trends__number" src="assets/images/general/5.svg" alt="Номер задания 5" />
         <h2 class="block__header trends__header">Тренды</h2>
         <div class="trends__text-box">
@@ -349,21 +362,23 @@
         </div>
         <button class="btn conclusion__btn">сохранить</button>
       </section>
-      <section class="summary"><img class="summary__paper" src="assets/images/general/Summary_back.svg" alt="" /><img class="summary__paper_mobile" src="assets/images/general/paper_mobile.svg" alt="" />
-        <div class="summary__text-box">
-          <h2 class="block__header summary__header">У тебя остались несохраненные этапы.</h2><img class="summary__marker" src="assets/images/general/marker_summary.svg" alt="" />
-          <p class="block__text summary__text">Если это не было твоей задумкой, можешь вернуться и завершить начатое. </p>
-          <p class="summary__luck">Удачи тебе! =)</p>
-        </div>
-        <div class="button__save">
-          <button class="btn summary__btn return__btn" type="button" id="btn-returnToEmpty">ОК</button>
-          <button class="btn summary__btn save__btn" type="button" id="btn-save">перейти к документу</button>
-        </div>
-        <div class="block_hints summary__hints">
-          <p>Тебе необходимо вернуться и завершить начатое</p>
-        </div><img class="summary__tape" src="assets/images/general/tape.svg" alt="" />
-      </section>
     </div>
+  </div>
+  <div class="summary-container">
+    <section class="summary"><img class="summary__paper" src="assets/images/general/Summary_back.svg" alt="" /><img class="summary__paper_mobile" src="assets/images/general/paper_mobile.svg" alt="" />
+      <div class="summary__text-box">
+        <h2 class="block__header summary__header">У тебя остались несохраненные этапы.</h2><img class="summary__marker" src="assets/images/general/marker_summary.svg" alt="" />
+        <p class="block__text summary__text">Тебе необходимо вернуться и завершить начатое.</p>
+        <p class="summary__luck">Удачи тебе! =)</p>
+      </div>
+      <div class="button__save">
+        <button class="btn summary__btn return__btn" type="button" id="btn-returnToEmpty">ОК</button>
+        <button class="btn summary__btn save__btn" type="button" id="btn-save">перейти к документу</button>
+      </div>
+      <div class="block_hints summary__hints">
+        <p>Если ты хочешь закончить сессию, жми - ОК</p>
+      </div><img class="summary__tape" src="assets/images/general/tape.svg" alt="" />
+    </section>
   </div>
   <footer class="footer">
     <div class="footer__container">
@@ -381,6 +396,8 @@
   <script src="assets/js/value_proposition.min.js"></script>
   <script src="assets/js/nav.min.js"></script>
   <script src="assets/js/emotions_input.min.js"></script>
+  <script src="assets/js/main_page.min.js"></script>
+  <script src="assets/js/emotions_block.min.js"></script>
 </body>
 
 </html>
