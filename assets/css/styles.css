@@ -1017,7 +1017,7 @@ textarea.counter__notes {
 
 .emotions__content-header {
   display: flex;
-  max-width: 696px;
+  max-width: 790px;
   margin: 0px auto;
   min-height: 120px;
 }
@@ -3365,6 +3365,10 @@ body {
     background: url("../images/index/lucky.svg") bottom 18px right 30px/15% no-repeat, url("../images/index/new-cell-yellow.svg") repeat;
     background-color: #FFFFFF;
   }
+
+  .main__ideas-stikers {
+    gap: 30px 120px;
+  }
 }
 
 @media (max-width: 1024px) {
@@ -3974,6 +3978,20 @@ body {
     padding-top: 140px;
   }
 
+  .target-group__notes-back {
+    display: block;
+    position: absolute;
+    width: 277px;
+    height: 271px;
+    z-index: -1;
+    top: 360px;
+    left: -70px;
+  }
+
+  .target-group__notes-back--small {
+    display: none;
+  }
+
   .emotions__number {
     height: 93px;
   }
@@ -4513,36 +4531,7 @@ body {
   }
 }
 
-@media (max-width: 430px) {
-  ._container {
-    background-position: top 28px center;
-  }
-
-  ._page-conteiner {
-    width: 90%;
-  }
-
-  .main__info {
-    line-height: 100%;
-  }
-
-  .main__info .main__description {
-    width: 80%;
-    margin-top: 46%;
-    font-size: 12px;
-  }
-
-  .main__info .main__description p:first-child {
-    margin-bottom: 0;
-  }
-
-  .main__info .main__description p {
-    line-height: 1;
-    padding-bottom: 10px;
-  }
-}
-
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 435px) {
   .container-bg {
     background-image: url("../images/general/background-430.svg");
     background-size: 100%;
@@ -5506,6 +5495,35 @@ body {
 
   .footer__info-yoootime {
     height: 24px;
+  }
+}
+
+@media (max-width: 430px) {
+  ._container {
+    background-position: top 28px center;
+  }
+
+  ._page-conteiner {
+    width: 90%;
+  }
+
+  .main__info {
+    line-height: 100%;
+  }
+
+  .main__info .main__description {
+    width: 80%;
+    margin-top: 46%;
+    font-size: 12px;
+  }
+
+  .main__info .main__description p:first-child {
+    margin-bottom: 0;
+  }
+
+  .main__info .main__description p {
+    line-height: 1;
+    padding-bottom: 10px;
   }
 }
 
