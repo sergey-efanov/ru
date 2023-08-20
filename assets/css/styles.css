@@ -2259,6 +2259,10 @@ textarea.counter__notes {
   background-image: url("../images/screens/Скрин5.png");
 }
 
+.text-change3 {
+  display: none;
+}
+
 ._container {
   max-width: 1440px;
   margin: 0px auto;
@@ -4706,6 +4710,14 @@ body {
 
   .image4 {
     background-image: url("../images/screens/Скрин4.2.jpg");
+  }
+
+  .text-change3 {
+    display: block;
+  }
+
+  .text-change4 {
+    display: none;
   }
 }
 
