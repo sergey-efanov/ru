@@ -2698,8 +2698,13 @@ textarea.counter__notes {
   margin: 0px 50px 103px;
 }
 
+.footer__info a {
+  display: flex;
+  justify-content: center;
+}
+
 .footer__info a img {
-  width: 100%;
+  width: 80%;
   -webkit-transform: none;
 }
 
